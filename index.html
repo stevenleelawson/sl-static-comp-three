@@ -5,18 +5,103 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Steven's Static Comp Three</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css"> -->
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <nav>
-
     </nav>
     <aside class="">
-
+      <section class="user-photo">
+        <img src="images/steven.jpg" alt="steven photo" class="steven">
+        <h5>Steven Lee Lawson</h5>
+      </section>
+      <section class="main-nav">
+        <h6>Main</h6>
+        <ul>
+          <li>Home</li>
+          <li>Jobs</li>
+          <li>Resume</li>
+          <li>Tasks</li>
+          <li>Calendar</li>
+        </ul>
+      <section class="admin-nav">
+        <h6>Admin</h6>
+        <ul>
+          <li>Users</li>
+          <li>Locations</li>
+          <li>Workflows</li>
+          <li>Job Boards</li>
+          <li>Social</li>
+        </ul>
+      </section>
+      <section class="nav-categories">
+        <div>
+          <label for="admin">Administrative</label>
+          <input type="checkbox" id="admin" class="admin-label">
+        </div>
+        <div class="">
+          <label for="admin">Design</label>
+          <input type="checkbox" id="design" class="design-label">
+        </div>
+        <div class="">
+          <label for="design">Executive</label>
+          <input type="checkbox" id="executive" class="executive-label">
+        </div>
+        <div class="">
+          <label for="executive">Administrative</label>
+          <input type="checkbox" id="admin" class="admin-label">
+        </div>
+      </section>
     </aside>
     <main>
+      <section class="top-search-buttons">
+        <button type="button">list</button>
+        <input type="search">
+        <button type="button">user</button>
+        <button type="button">calender</button>
+        <button type="button">dots</button>
+      </section>
+      <section class="top-title-location-buttons">
+        <h1>Customer Service Representative</h1>
+        <button type="button">a</button>
+        <button type="button">b</button>
+        <button type="button">c</button>
+        <button type="button">d</button>
+      </section>
+      <ul>
+        <li>SUMMARY</li>
+        <li>APPLICANTS</li>
+        <li>JOB BOARD</li>
+        <li>INTERVIEWS</li>
+        <li>ACTIVITY</li>
+        <li>BROADCAST</li>
+        <li>NOTIFICATIONS</li>
+      </ul>
+      <section class="charts">
+      <svg width="100%" height="100%" viewBox="0 0 42 42" class="donut">
+        <circle class="donut-hole" cx="21" cy="21" r="15.91549430918954" fill="#fff"></circle>
+        <circle class="donut-ring" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#d2d3d4" stroke-width="3"></circle>
 
+        <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#094D92" stroke-width="3" stroke-dasharray="85 15" stroke-dashoffset="0"></circle>
+      </svg>
+      <svg width="100%" height="100%" viewBox="0 0 42 42" class="donut">
+        <circle class="donut-hole" cx="21" cy="21" r="15.91549430918954" fill="#fff"></circle>
+        <circle class="donut-ring" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#d2d3d4" stroke-width="3"></circle>
+
+        <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#95E06C" stroke-width="3" stroke-dasharray="65 35" stroke-dashoffset="0"></circle>
+      </svg>
+      <svg width="100%" height="100%" viewBox="0 0 42 42" class="donut">
+        <circle class="donut-hole" cx="21" cy="21" r="15.91549430918954" fill="#fff"></circle>
+        <circle class="donut-ring" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#d2d3d4" stroke-width="3"></circle>
+
+        <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#ce4b99" stroke-width="3" stroke-dasharray="85 15" stroke-dashoffset="0"></circle>
+      </svg>
+        <!-- <div class="circle1-container">
+          <div class="circle1"></div> -->
+        </div>
+      </section>
     </main>
   </body>
 </html>

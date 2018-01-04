@@ -1,3 +1,100 @@
-body {
-  background: chartreuse;
+* {
+  border: 1px dashed pink;
+
 }
+html {
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+/* below is styles for the aside vertical nav bar */
+ul {
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+h6 {
+  margin-left: 15rem;
+  color: coral;
+}
+.admin-nav,
+.main-nav {
+  border: 1px solid red;
+}
+
+.nav-categories {
+  border: 1px solid green;
+  /* height: 8rem; */
+}
+/* below is the code for the user-photo section */
+.user-photo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid black;
+}
+
+.steven {
+  height: 4rem;
+  width: 4rem;
+  border-radius: 100%;
+  margin: 4rem 4rem 1rem 4rem;
+}
+/* end user-photo */
+
+/* below is the code for the admin nav section */
+
+.nav-categories {
+  display: flex;
+  flex-direction: column;
+}
+/* end admin user nav */
+
+/* begin styles for nav */
+ul {
+  display: flex;
+  flex-direction: column;
+}
+.top-search-buttons {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  border: 1px solid grey;
+}
+
+input[type=checkbox], input[type=radio] {
+    vertical-align: middle;
+    position: relative;
+    bottom: 1px;
+}
+input[type=radio] {
+    bottom: 2px;
+}
+
+/* begin styles for charts section */
+
+svg {
+  width: 30%;
+}
+
+.charts {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+/* .circle1-container {
+  width: 10rem;
+}
+
+.circle1 {
+  position: relative;
+  border-radius: 50%;
+  border: 1rem solid green;
+  width: 4rem;
+  height: 4rem;
+} */
