@@ -1,14 +1,20 @@
-* {
-  border: 1px dashed pink;
 
-}
 html {
   box-sizing: border-box;
   font-size: 10px;
+  font-family: 'Roboto', sans-serif;
+}
+aside {
+  background-color: #343F53;
+  color: #cfd2d6;
+
 }
 
+hr {
+  border: 2px ridge #5c6f8e;
+}
 /* below is styles for the aside vertical nav bar */
-ul {
+.main-nav {
   list-style: none;
   justify-content: center;
   align-items: center;
@@ -16,40 +22,50 @@ ul {
   flex-direction: column;
 }
 
-h6 {
-  margin-left: 15rem;
-  color: coral;
-}
-.admin-nav,
-.main-nav {
-  border: 1px solid red;
+.main-nav__ul {
+  color: #cfd2d6;
 }
 
+.main-nav__li{
+  margin-right: 1rem;
+
+}
+.main-nav__h6 {
+  margin-right: 3.7rem;
+}
 .nav-categories {
-  border: 1px solid green;
+
   /* height: 8rem; */
 }
-/* below is the code for the user-photo section */
-.user-photo {
+/* below is the code for the user section */
+.user {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  border: 1px solid black;
+  width: 100%;
+}
+.user__h5 {
+  margin-bottom: 4rem;
 }
 
-.steven {
-  height: 4rem;
-  width: 4rem;
+.user__img {
+  height: 6rem;
+  width: 6rem;
   border-radius: 100%;
   margin: 4rem 4rem 1rem 4rem;
 }
 /* end user-photo */
 
 /* below is the code for the admin nav section */
+.admin-nav__h6 {
+  margin-right: 3.3rem;
+}
 
-.nav-categories {
+.admin-nav {
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
 }
 /* end admin user nav */
@@ -59,14 +75,26 @@ ul {
   display: flex;
   flex-direction: column;
 }
-.top-search-buttons {
+.top-search {
   display: flex;
   flex-direction: row;
   width: 100%;
-  border: 1px solid grey;
+
+}
+.admin-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.nav-categories {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-input[type=checkbox], input[type=radio] {
+input[type=checkbox] {
     vertical-align: middle;
     position: relative;
     bottom: 1px;
@@ -78,23 +106,16 @@ input[type=radio] {
 /* begin styles for charts section */
 
 svg {
-  width: 30%;
+  width: 35%;
 }
 
-.charts {
+.charts__svg {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-/* .circle1-container {
-  width: 10rem;
-}
 
-.circle1 {
-  position: relative;
-  border-radius: 50%;
-  border: 1rem solid green;
-  width: 4rem;
-  height: 4rem;
-} */
+.charts__img--bar {
+  width: 90%;
+}
