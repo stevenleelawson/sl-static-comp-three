@@ -6,7 +6,9 @@
     <title>Steven's Static Comp Three</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab:400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
   </head>
   <body>
     <nav>
@@ -14,36 +16,73 @@
     <aside>
       <section class="user">
         <img src="images/steven.jpg" alt="steven photo" class="user__img">
-        <h5 class="user__h5">Steven Lee Lawson</h5>
+        <h5 class="user__h5">
+          Steven Lee Lawson
+          <img src="aside-icons/011-down-arrow.svg" class="aside--icon user__img--icon" alt="down-arrow icon">
+        </h5>
+
       </section>
       <hr>
       <section class="main-nav">
         <h6 class="main-nav__h6">Main</h6>
         <ul "main-nav__ul">
-          <li class="main-nav__li">HOME</li>
-          <li class="main-nav__li">JOBS</li>
-          <li class="main-nav__li">RESUME</li>
-          <li class="main-nav__li">TASKS</li>
-          <li class="main-nav__li">CALENDER</li>
+          <li class="main-nav__li">
+            <img src="aside-icons/010-home.svg" class="aside--icon" alt="home icon">
+            HOME
+          </li>
+          <li class="main-nav__li">
+            <img src="aside-icons/007-briefcase-1.svg" class="aside--icon" alt="briefcase icon">
+            JOBS
+          </li>
+          <li class="main-nav__li">
+            <img src="aside-icons/001-newspaper.svg" class="aside--icon" alt="newspaper icon">
+            RESUME
+          </li>
+          <li class="main-nav__li">
+            <img src="aside-icons/008-clipboard-icon.svg" class="aside--icon" alt="clipboard-icon icon">
+            TASKS
+          </li>
+          <li class="main-nav__li">
+            <img src="aside-icons/006-calendar-with-a-clock-time-tools.svg" class="aside--icon" alt="calendar icon">
+            CALENDAR
+          </li>
         </ul>
       </section>
       <hr>
       <section class="admin-nav">
         <h6 class="admin-nav__h6">Admin</h6>
         <ul class="admin-nav__ul">
-          <li class="admin-nav__li">USERS</li>
-          <li class="admin-nav__li">LOCATIONS</li>
-          <li class="admin-nav__li">WORKFLOW</li>
-          <li class="admin-nav__li">JOB BOARDS</li>
-          <li class="admin-nav__li">SOCIAL</li>
+          <li class="admin-nav__li">
+            <img src="aside-icons/005-users.svg" class="aside--icon" alt="users icon">
+            USERS
+          </li>
+          <li class="admin-nav__li">
+            <img src="aside-icons/004-placeholder.svg" class="aside--icon" alt="placeholder icon">
+            LOCATIONS
+          </li>
+          <li class="admin-nav__li">
+            <img src="aside-icons/003-workflow.svg" class="aside--icon" alt="workflow icon">
+            WORKFLOW
+          </li>
+          <li class="admin-nav__li">
+            <img src="aside-icons/009-briefcase.svg" class="aside--icon" alt="briefcase icon">
+            JOB BOARDS
+          </li>
+          <li class="admin-nav__li">
+            <img src="aside-icons/002-share.svg" class="aside--icon" alt="share icon">
+            SOCIAL
+          </li>
         </ul>
       </section>
       <hr>
       <section class="nav-categories">
-        <div>
-          <label for="admin">Administrative</label>
+        <div class="nav-categories__container">
+          <label for="admin">Administrative
+          </label>
           <input type="checkbox" id="admin" class="nav-categories__input--admin">
+          <div class="nav-categories__div-box--admin"></div>
         </div>
+
         <div class="">
           <label for="admin">Design</label>
           <input type="checkbox" id="design" class="nav-categories__input--design">
