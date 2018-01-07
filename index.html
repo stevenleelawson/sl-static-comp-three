@@ -125,10 +125,19 @@
       <input type="image" placeholder="Search for a job, task or resume" class="top-search__search" src="main-icons/search.svg">
       <section class="top-title">
         <h1 class="top-title__h1">Customer Service Representative</h1>
-        <button type="button" class="top-title__btn--btn-open">Open</button>
-        <button type="button" class="top-title__btn--btn-flag">Flag</button>
-        <button type="button" class="top-title__btn--btn-edit">Edit</button>
-        <button type="button" class="top-title__btn--btn-watch">Watch</button>
+        <div class="location">
+          <p class="location__p">
+            <img src="aside-icons/004-placeholder.svg" alt="map icon" class="aside--icon --location">
+            Denver, CO
+          </p>
+          <p class="location__p --hover-blue">Preview this post</p>
+        </div>
+        <div class="top-search__btn-container">
+          <button type="button" class="top-title__btn --btn-open">OPEN</button>
+          <button type="button" class="top-title__btn --btn-flag">Flag</button>
+          <button type="button" class="top-title__btn --btn-edit">Edit</button>
+          <button type="button" class="top-title__btn --btn-watch">Watch</button>
+        </div>
       </section>
       <ul class="tab-menu">
         <li class="tab-menu__li">SUMMARY</li>
@@ -160,11 +169,17 @@
             <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#ce4b99" stroke-width="3" stroke-dasharray="25 75" stroke-dashoffset="75"></circle>
           </svg>
         </div>
-        <button type="button" class="charts__btn">TOTALS out of 337,456 views</button>
+        <div class="charts__btn--container">
+          <button type="button" class="charts__btn">TOTALS out of 337,456 views</button>
+        </div>
         <div class="charts__img">
-          <img src="images/bar-graph.jpg" alt="come on aileen" class="charts__img--bar">
+          <img src="images/mario-chart.jpg" alt="mario cart" class="charts__img--bar">
+        </div>
+        <div class="charts__btn--container">
+          <button type="button" class="charts__btn">APPLICATIONS/DAY</button>
         </div>
       </section>
     </main>
+    <hr>
   </body>
 </html>

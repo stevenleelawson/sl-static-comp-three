@@ -161,8 +161,29 @@ label {
   background-color: chartreuse;
 }
 
+.top-title__h1 {
+  font-size: 3rem;
+  margin: 2rem 2rem 1rem 2rem;
+}
 
+.--location {
+  margin: 0 0 0 2rem;
+  padding: 0;
+}
 
+.location__p {
+  display: inline-block;
+}
+
+.--hover-blue:hover {
+  color: #094d92;
+}
+.--hover-blue {
+  float: right;
+  margin-right: 9rem;
+  margin-top: 3px;
+  cursor: pointer;
+}
 input[type=checkbox] {
   position: absolute;
   top: -9999px;
@@ -178,10 +199,20 @@ input[type=checkbox]:checked ~ .nav-categories__div-box {
 /* begin styles for main section */
 .tab-menu {
   background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .tab-menu__li {
   font-size: 2rem;
   margin-bottom: 2rem;
+  color: grey;
+}
+
+.tab-menu__li:hover {
+  color: black;
+  border-bottom: 3px solid blue;
+  width: 11rem;
 }
 
 .top-search {
@@ -200,6 +231,12 @@ input[type=checkbox]:checked ~ .nav-categories__div-box {
   background: #094d92;
 }
 
+.top-search__btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .top-search__search {
   height: 4rem;
   width: 100%;
@@ -208,6 +245,14 @@ input[type=checkbox]:checked ~ .nav-categories__div-box {
 
   /* background-image: url('main-icons/search.svg');
   background-size: cover; */
+}
+
+.top-title__btn {
+  border: .5px solid black;
+  border-radius: 15px;
+  padding: 1rem;
+  background: #fff;
+  margin: 2rem 0 4rem 0;
 }
 /* begin styles for charts section */
 svg {
@@ -227,9 +272,19 @@ svg {
 
 .charts__img--bar {
   width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.charts__btn--container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .charts__btn {
   border: .5px solid black;
-  border-radius: 5px;
+  border-radius: 15px;
+  padding: 1rem;
+  background: #fff;
+  margin: 2rem 0 4rem 0;
 }
