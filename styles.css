@@ -4,6 +4,7 @@ html {
   font-size: 10px;
   font-family: 'Open Sans', sans-serif;
 }
+
 aside {
   background-color: #343F53;
   color: #cfd2d6;
@@ -175,9 +176,16 @@ input[type=checkbox]:checked ~ .nav-categories__div-box {
 /* end styles for aside section */
 
 /* begin styles for main section */
+.tab-menu {
+  background-color: #fff;
+}
+.tab-menu__li {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
 .top-search {
   border: .5px solid grey;
-  cursor: pointer;
 }
 
 .top-search__btn {
@@ -188,15 +196,26 @@ input[type=checkbox]:checked ~ .nav-categories__div-box {
   cursor: pointer;
 }
 
+.top-search__btn:hover {
+  background: #094d92;
+}
+
 .top-search__search {
-  height: 3rem;
+  height: 4rem;
   width: 100%;
+  cursor: pointer;
+  border: .5px solid grey;
+
   /* background-image: url('main-icons/search.svg');
   background-size: cover; */
 }
 /* begin styles for charts section */
 svg {
   width: 35%;
+}
+
+.charts {
+  background-color: #edeff7;
 }
 
 .charts__svg {
@@ -208,4 +227,9 @@ svg {
 
 .charts__img--bar {
   width: 100%;
+}
+
+.charts__btn {
+  border: .5px solid black;
+  border-radius: 5px;
 }
