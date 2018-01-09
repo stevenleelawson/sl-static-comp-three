@@ -3,6 +3,7 @@ html {
   box-sizing: border-box;
   font-size: 10px;
   font-family: 'Open Sans', sans-serif;
+  color: grey;
 }
 
 aside {
@@ -22,6 +23,7 @@ h6 {
 hr {
   border: 2px ridge #5c6f8e;
 }
+
 /* below is styles for the aside vertical nav bar */
 
 .user__img--icon {
@@ -106,7 +108,7 @@ ul {
   font-size: 2rem;
 }
 li {
-  margin: 2rem;
+  margin: 1rem;
 }
 
 label {
@@ -204,7 +206,7 @@ input[type=checkbox]:checked ~ .nav-categories__div-box {
   align-items: center;
 }
 .tab-menu__li {
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin-bottom: 2rem;
   color: grey;
 }
@@ -216,7 +218,7 @@ input[type=checkbox]:checked ~ .nav-categories__div-box {
 }
 
 .top-search {
-  border: .5px solid grey;
+  border: .5px solid lightgrey;
 }
 
 .top-search__btn {
@@ -225,6 +227,11 @@ input[type=checkbox]:checked ~ .nav-categories__div-box {
   border: 0 .5px 0 .5px solid grey;
   background: none;
   cursor: pointer;
+}
+
+.top-search--icon {
+  height: 1.5rem;
+  width: 1.5rem;
 }
 
 .top-search__btn:hover {
@@ -250,13 +257,33 @@ input[type=checkbox]:checked ~ .nav-categories__div-box {
   visibility: hidden;
 }
 
+.top-title {
+  display: flex;
+  justify-content: space-between;
+}
 .top-title__btn {
-  border: .5px solid black;
-  border-radius: 15px;
+  border: .5px solid lightgrey;
+  border-radius: 50%;
   padding: 1rem;
   background: #fff;
   margin: 2rem 0 4rem 0;
+  color: grey;
+  margin: 0 1rem .5rem 1rem;
 }
+.--btn-open {
+  border-radius: 15px;
+}
+
+.top-title__btn--green-dot {
+  height: .5rem;
+  width: .5rem;
+  border-radius: 50%;
+  background-color: green;
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 2px;
+}
+
 /* begin styles for charts section */
 svg {
   width: 35%;
@@ -264,6 +291,12 @@ svg {
 
 .charts {
   background-color: #edeff7;
+}
+
+.charts__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .charts__svg {
@@ -274,8 +307,10 @@ svg {
 }
 
 .charts__img--bar {
-  width: 100%;
-  margin-bottom: 1.5rem;
+  width: 50%;
+  margin-bottom: 2rem 0 1.5rem 0;
+  height: 20rem;
+
 }
 
 .charts__btn--container {
@@ -285,7 +320,7 @@ svg {
 }
 
 .charts__btn {
-  border: .5px solid black;
+  border: .5px solid grey;
   border-radius: 15px;
   padding: 1rem;
   background: #fff;
@@ -298,6 +333,7 @@ svg {
 
 .hr {
   text-align: center;
+  background-color: #EDEFF7;
 }
 
 .hr img {
@@ -315,8 +351,18 @@ svg {
   border-radius: 50%;
   padding: 0;
 }
+
+.ornament__hr {
+  border: 1px solid lightgrey;
+}
+
 /* end charts section */
 /* begin job descript section */
+.job-descript {
+  margin: 2rem;
+  background-color: #fff;
+}
+
 .job-descript__div {
   display: grid;
   grid-template-columns: 40% 60%;
@@ -331,6 +377,7 @@ svg {
   vertical-align: middle;
   position: relative;
   bottom: 2px;
+  width: 80%;
 }
 
 .--JD-title {
@@ -344,8 +391,24 @@ svg {
   color: #fff;
   padding-right: 1rem;
 }
+
+.bottom-content {
+  background-color: #edeff7;
+}
+
+.job-descript__btn {
+  width: 16%;
+  border-radius: 0;
+  background-color: #8D95A1;
+  color: #fff;
+  height: 4rem;
+  border: none;
+}
 /* end styles for job descript section */
 /* begin styles for share section */
+.share {
+  background-color: #EDEFF7;
+}
 .share__button-container {
   display: flex;
   flex-direction: column;
@@ -356,8 +419,16 @@ svg {
   display: block;
   background-color: royalblue;
   width: 90%;
+  color: #fff;
   height: 4rem;
   margin: 1rem;
+}
+
+.share__button--twitter {
+  background-color: #009DF6;
+}
+.share__button--linkedin {
+  background-color: #02ce86;
 }
 @media screen and (min-width: 700px){
   body {
@@ -405,7 +476,7 @@ svg {
   }
   .--hover-blue {
     float: right;
-    margin-left: 40rem;
+    margin-left: 3rem;
     margin-top: 3px;
     cursor: pointer;
   }
@@ -416,6 +487,7 @@ svg {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    margin-top: 1rem;
   }
   .charts {
     display: flex;
@@ -426,10 +498,18 @@ svg {
     flex-direction: row;
 
   }
+
+  .charts__img--bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem 0 1.5rem 0;
+  }
   .job-descript{
     width: 60%;
     /* display: flex;
     flex-direction: row; */
+    /* border: 1px solid black; */
 
   }
   .share {
@@ -439,5 +519,24 @@ svg {
     width: 100%;
     display: flex;
     flex-direction: row;
+  }
+  .svg-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .bar-graph-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .job-descript__h2--last {
+    margin-bottom: 2rem;
+  }
+
+  .top-section__div {
+    border-bottom: 1px solid lightgrey;
   }
 }
