@@ -427,13 +427,16 @@ svg {
 
   }
   .job-descript{
-    width: 59%;
+    width: 60%;
+    /* display: flex;
+    flex-direction: row; */
 
   }
-  .share__button-container {
-    width: 39%;
+  .share {
+    width: 40%;
   }
   .bottom-content {
+    width: 100%;
     display: flex;
     flex-direction: row;
   }
