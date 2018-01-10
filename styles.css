@@ -1,3 +1,4 @@
+
 /* general styles of the page */
 html {
   box-sizing: border-box;
@@ -165,7 +166,7 @@ label {
 
 .top-title__h1 {
   font-size: 3rem;
-  margin: 2rem 2rem 1rem 2rem;
+  margin: .2rem 3rem 3rem 3rem;
 }
 
 .--location {
@@ -209,12 +210,13 @@ input[type=checkbox]:checked ~ .nav-categories__div-box {
   font-size: 1.5rem;
   margin-bottom: 2rem;
   color: grey;
+  border-bottom: 3px solid #fff;
 }
 
 .tab-menu__li:hover {
   color: black;
-  border-bottom: 3px solid blue;
-  width: 11rem;
+  border-bottom: 3px solid royalblue;
+  width: 5rem;
 }
 
 .top-search {
@@ -224,7 +226,7 @@ input[type=checkbox]:checked ~ .nav-categories__div-box {
 .top-search__btn {
   height: 6rem;
   width: 25%;
-  border: 0 .5px 0 .5px solid grey;
+  /* border: 0 .5px 0 .5px solid grey; */
   background: none;
   cursor: pointer;
 }
@@ -242,6 +244,8 @@ input[type=checkbox]:checked ~ .nav-categories__div-box {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+  display: block;
 }
 
 .top-search__search {
@@ -255,12 +259,15 @@ input[type=checkbox]:checked ~ .nav-categories__div-box {
   height: 6rem;
   width: 60%;
   visibility: hidden;
+  position: absolute;
 }
 
 .top-title {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
 }
+
 .top-title__btn {
   border: .5px solid lightgrey;
   border-radius: 50%;
@@ -320,11 +327,12 @@ svg {
 }
 
 .charts__btn {
-  border: .5px solid grey;
+  border: .5px solid lightgrey;
   border-radius: 15px;
   padding: 1rem;
   background: #fff;
   margin: 2rem 0 4rem 0;
+  color: lightgrey;
 }
 
 .ornament--div__hr {
@@ -414,6 +422,7 @@ svg {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: .9rem;
 }
 .share__btn {
   display: block;
@@ -433,14 +442,19 @@ svg {
 }
 
 .share__article {
-  margin-left: 2.2rem;
+  margin-left: 10.2rem;
+  width: 69%;
 }
 
 .share__article--h1 {
   font-size: 2rem;
 }
 
-
+.share__hr {
+  border: 1px solid lightgrey;
+  margin: 2rem 0 2rem 11rem;
+  width: 60%;
+}
 .share__widget {
   display: flex;
   flex-direction: row;
@@ -458,7 +472,7 @@ svg {
   background-color: #019bba;
   height: 4rem;
   width: 5rem;
-  margin: 0;
+  margin-right: 5rem;
   color: #fff;
   display: flex;
   justify-content: center;
@@ -480,73 +494,22 @@ svg {
 .--sans-button {
   width: 24rem;
 }
-@media screen and (min-width: 700px){
-  body {
-    display: grid;
-    /* grid-template-rows: 20% 20% 20% 20% 20%; */
-    grid-template-columns: 20% 80%;
-  }
 
-  aside {
-    grid-row-start: 1;
-    grid-row-end: 5;
-  }
-  .top-search {
-    grid-column-start: 2;
-    grid-column-end: 5;
-    display: flex;
-    flex-direction: row;
-  }
-  .top-search__btn {
-    height: 6rem;
-    width: 10%;
-    border: 0 .5px 0 .5px solid grey;
-    background: none;
-    cursor: pointer;
-  }
-  .top-section__div{
-    height: 6rem;
-    width: 60%;
-    visibility: visible;
-  }
+
+@media screen and (min-width: 619px){
+
   .top-search__search {
     visibility: hidden;
   }
-  .top-title {
-    display: flex;
-    flex-direction: row;
-    position: relative;
-  }
-  .location {
-    position: absolute;
-    left: 0;
-    top: 6rem;
-    display: flex;
-    justify-content: space-between;
-  }
-  .--hover-blue {
-    float: right;
-    margin-left: 3rem;
-    margin-top: 3px;
-    cursor: pointer;
-  }
-  .top-search__btn-container {
-    align-self: flex-end;
-  }
-  .tab-menu {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-top: 1rem;
-  }
+
   .charts {
     display: flex;
     flex-direction: row;
   }
+
   .charts__svg {
     display: flex;
     flex-direction: row;
-
   }
 
   .charts__img--bar {
@@ -555,21 +518,161 @@ svg {
     align-items: center;
     margin: 3rem 0 1.5rem 0;
   }
-  .job-descript{
-    width: 60%;
-    /* display: flex;
-    flex-direction: row; */
-    /* border: 1px solid black; */
 
+  aside {
+    grid-column-start: 1;
+    grid-column-end: 3;
   }
+
+  ul {
+    flex-direction: row;
+  }
+  .admin-nav__li {
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: row;
+  }
+  .tab-menu__li {
+    font-size: 1rem;
+  }
+  .share__btn {
+    width: 40%;
+  }
+}
+@media screen and (min-width: 1083px){
+  body {
+    display: grid;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+    grid-template-columns: 20% 80%;
+  }
+
+  ul {
+    flex-direction: column;
+  }
+
+  aside {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 5;
+  }
+
+  .top-search {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .top-search__btn {
+    height: 6.2rem;
+    width: 10%;
+    background: none;
+    cursor: pointer;
+  }
+
+  .top-section__div{
+    height: 6rem;
+    width: 60%;
+    visibility: visible;
+    display: flex;
+    align-items: center;
+    color: lightgrey;
+    font-size: 2rem;
+    position: relative;
+  }
+
+  .top-section__img {
+    height: 3rem;
+    width: 3rem;
+    margin: 1rem;
+  }
+
+  .top-search__search {
+    visibility: hidden;
+  }
+
+  .top-title {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+  }
+
+  .location {
+    position: absolute;
+    left: 0;
+    top: 6rem;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .tab-menu__li {
+    font-size: 1.5rem;
+  }
+
+  .--hover-blue {
+    float: right;
+    margin-left: 3rem;
+    margin-top: 3px;
+    cursor: pointer;
+  }
+
+  .top-search__btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+
+  .tab-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 1rem;
+  }
+
+  .svg-container {
+    margin: 7rem;
+  }
+
+  .charts {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .charts__svg {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .charts__img--bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 6.2rem 0 1.5rem 0;
+  }
+
+  .job-descript {
+    width: 60%;
+  }
+
   .share {
     width: 40%;
+  }
+
+  .share__btn-container {
+    margin-top: 3rem;
+  }
+
+  .share__btn {
+    width: 60%;
   }
   .bottom-content {
     width: 100%;
     display: flex;
     flex-direction: row;
   }
+
   .svg-container {
     display: flex;
     flex-direction: column;
@@ -587,6 +690,6 @@ svg {
   }
 
   .top-section__div {
-    border-bottom: 1px solid lightgrey;
+    border-bottom: 2px solid lightgrey;
   }
 }
