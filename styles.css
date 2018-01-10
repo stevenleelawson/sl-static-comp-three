@@ -542,7 +542,7 @@ svg {
   }
 }
 @media screen and (min-width: 1083px){
-  
+
   body {
     display: grid;
     grid-template-columns: 20% 80%;
@@ -636,6 +636,7 @@ svg {
 
   .svg-container {
     margin: 7rem;
+    position: relative;
   }
 
   .charts {
@@ -646,6 +647,26 @@ svg {
   .charts__svg {
     display: flex;
     flex-direction: row;
+  }
+
+  .charts__svg--content {
+    position: absolute;
+  }
+
+  .charts__svg--content {
+    font-size: 2rem;
+  }
+
+  .charts__svg--content-one {
+    font-size: 2rem;
+    left: 8rem;
+    position: absolute;
+  }
+
+  .charts__svg--content-two {
+    font-size: 2rem;
+    position: absolute;
+    right: 8rem;
   }
 
   .charts__img--bar {
