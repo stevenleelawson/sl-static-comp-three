@@ -611,6 +611,7 @@ svg {
 
   .tab-menu__li {
     font-size: 1.5rem;
+    margin-top: 2rem;
   }
 
   .--hover-blue {
@@ -624,9 +625,13 @@ svg {
     align-items: center;
     display: flex;
     justify-content: center;
-    margin-bottom: 2rem;
+    margin: 0 4rem 4rem 0;
   }
 
+  .top-title__btn {
+    margin: 1rem;
+  }
+  
   .tab-menu {
     display: flex;
     flex-direction: row;
