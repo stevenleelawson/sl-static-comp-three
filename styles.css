@@ -2,9 +2,9 @@
 /* general styles of the page */
 html {
   box-sizing: border-box;
-  font-size: 10px;
-  font-family: 'Open Sans', sans-serif;
   color: grey;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 10px;
 }
 
 aside {
@@ -18,8 +18,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Roboto Slab', serif;
   color: #4b5a75;
+  font-family: 'Roboto Slab', serif;
 }
 hr {
   border: 2px ridge #5c6f8e;
@@ -33,20 +33,20 @@ hr {
 }
 
 .aside--icon {
-  height: 2rem;
-  width: 2rem;
-  vertical-align: middle;
-  position: relative;
   bottom: 1px;
+  height: 2rem;
   padding-right: 1rem;
+  position: relative;
+  vertical-align: middle;
+  width: 2rem;
 }
 
 .main-nav {
-  list-style: none;
-  justify-content: center;
   align-items: center;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  list-style: none;
 }
 
 .main-nav__ul {
@@ -61,31 +61,29 @@ hr {
   margin-right: 3.7rem;
 }
 .nav-categories {
+  align-items: center;
   display: flex;
   justify-content: flex-start;
-  align-items: center;
-  /* height: 8rem; */
 }
 /* below is the code for the user section */
 .user {
-  display: flex;
-  justify-content: center;
   align-items: center;
+  display: flex;
   flex-direction: column;
+  justify-content: center;
   width: 100%;
 }
 .user__h5 {
-  /* margin-bottom: 4rem; */
-  margin: 1rem 0 2rem 0;
-  font-size: 2rem;
   color: #cfd2d6;
+  font-size: 2rem;
+  margin: 1rem 0 2rem 0;
 }
 
 .user__img {
-  height: 13rem;
-  width: 13rem;
   border-radius: 100%;
+  height: 13rem;
   margin: 4rem 4rem 1rem 4rem;
+  width: 13rem;
 }
 /* end user-photo */
 
@@ -95,10 +93,10 @@ hr {
 }
 
 .admin-nav {
-  display: flex;
-  justify-content: center;
   align-items: center;
+  display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 /* end admin user nav */
 
@@ -124,29 +122,29 @@ label {
 
 }
 .admin-nav {
-  display: flex;
-  justify-content: center;
   align-items: center;
+  display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 .nav-categories {
-  display: flex;
-  justify-content: space-between;
   align-items: center;
+  display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 .nav-categories__container {
   display: flex;
-  justify-content: space-between;
   flex-direction: row;
+  justify-content: space-between;
   width: 70%;
 }
 
 .nav-categories__div-box {
   height: 2rem;
-  width: 2rem;
   margin: 1rem;
+  width: 2rem;
 }
 .--admin {
   background-color: yellow;
@@ -182,15 +180,15 @@ label {
   color: #094d92;
 }
 .--hover-blue {
+  cursor: pointer;
   float: right;
   margin-right: 9rem;
   margin-top: 3px;
-  cursor: pointer;
 }
 input[type=checkbox] {
+  left: -9999px;
   position: absolute;
   top: -9999px;
-  left: -9999px;
 }
 
 input[type=checkbox]:checked ~ .nav-categories__div-box {
@@ -201,21 +199,21 @@ input[type=checkbox]:checked ~ .nav-categories__div-box {
 
 /* begin styles for main section */
 .tab-menu {
+  align-items: center;
   background-color: #fff;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 .tab-menu__li {
+  border-bottom: 3px solid #fff;
+  color: grey;
   font-size: 1.5rem;
   margin-bottom: 2rem;
-  color: grey;
-  border-bottom: 3px solid #fff;
 }
 
 .tab-menu__li:hover {
-  color: black;
   border-bottom: 3px solid royalblue;
+  color: black;
   width: 5rem;
 }
 
@@ -224,11 +222,10 @@ input[type=checkbox]:checked ~ .nav-categories__div-box {
 }
 
 .top-search__btn {
-  height: 6rem;
-  width: 25%;
-  /* border: 0 .5px 0 .5px solid grey; */
   background: none;
   cursor: pointer;
+  height: 6rem;
+  width: 25%;
 }
 
 .top-search--icon {
@@ -241,25 +238,25 @@ input[type=checkbox]:checked ~ .nav-categories__div-box {
 }
 
 .top-search__btn-container {
-  display: flex;
-  justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
   display: block;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .top-search__search {
+  border: .5px solid grey;
+  cursor: pointer;
   height: 4rem;
   width: 100%;
-  cursor: pointer;
-  border: .5px solid grey;
 }
 
 .top-section__div{
   height: 6rem;
-  width: 60%;
-  visibility: hidden;
   position: absolute;
+  visibility: hidden;
+  width: 60%;
 }
 
 .top-title {
@@ -269,26 +266,26 @@ input[type=checkbox]:checked ~ .nav-categories__div-box {
 }
 
 .top-title__btn {
-  border: .5px solid lightgrey;
-  border-radius: 50%;
-  padding: 1rem;
   background: #fff;
-  margin: 2rem 0 4rem 0;
+  border-radius: 50%;
+  border: .5px solid lightgrey;
   color: grey;
   margin: 0 1rem .5rem 1rem;
+  margin: 2rem 0 4rem 0;
+  padding: 1rem;
 }
 .--btn-open {
   border-radius: 15px;
 }
 
 .top-title__btn--green-dot {
-  height: .5rem;
-  width: .5rem;
-  border-radius: 50%;
   background-color: green;
+  border-radius: 50%;
   display: inline-block;
-  vertical-align: middle;
+  height: .5rem;
   margin-bottom: 2px;
+  vertical-align: middle;
+  width: .5rem;
 }
 
 /* begin styles for charts section */
@@ -301,38 +298,38 @@ svg {
 }
 
 .charts__img {
+  align-items: center;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 .charts__svg {
+  align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
 }
 
 .charts__img--bar {
-  width: 50%;
-  margin-bottom: 2rem 0 1.5rem 0;
   height: 20rem;
+  margin-bottom: 2rem 0 1.5rem 0;
+  width: 50%;
 
 }
 
 .charts__btn--container {
+  align-items: center;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 .charts__btn {
-  border: .5px solid lightgrey;
-  border-radius: 15px;
-  padding: 1rem;
   background: #fff;
-  margin: 2rem 0 4rem 0;
+  border-radius: 15px;
+  border: .5px solid lightgrey;
   color: lightgrey;
+  margin: 2rem 0 4rem 0;
+  padding: 1rem;
 }
 
 .ornament--div__hr {
@@ -340,13 +337,13 @@ svg {
 }
 
 .hr {
-  text-align: center;
   background-color: #EDEFF7;
+  text-align: center;
 }
 
 .hr img {
- position: relative;
- bottom: 16px;
+  bottom: 16px;
+  position: relative;
 }
 
 .job-descript__hr {
@@ -367,8 +364,8 @@ svg {
 /* end charts section */
 /* begin job descript section */
 .job-descript {
-  margin: 2rem;
   background-color: #fff;
+  margin: 2rem;
 }
 
 .job-descript__div {
@@ -382,17 +379,17 @@ svg {
 }
 
 .job-descript__p {
-  vertical-align: middle;
-  position: relative;
   bottom: 2px;
+  position: relative;
+  vertical-align: middle;
   width: 80%;
 }
 
 .--JD-title {
   background-color: #7e8793;
-  padding: 2rem;
-  margin-bottom: 2rem;
   font-size: 1.2rem;
+  margin-bottom: 2rem;
+  padding: 2rem;
 }
 
 .--h2-title {
@@ -405,32 +402,34 @@ svg {
 }
 
 .job-descript__btn {
-  width: 16%;
-  border-radius: 0;
   background-color: #8D95A1;
+  border-radius: 0;
+  border: none;
   color: #fff;
   height: 4rem;
-  border: none;
+  width: 16%;
 }
 /* end styles for job descript section */
 /* begin styles for share section */
 .share {
   background-color: #EDEFF7;
 }
+
 .share__button-container {
+  align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   margin-top: .9rem;
 }
+
 .share__btn {
-  display: block;
   background-color: royalblue;
-  width: 90%;
   color: #fff;
+  display: block;
   height: 4rem;
   margin: 1rem;
+  width: 90%;
 }
 
 .share__button--twitter {
@@ -464,31 +463,31 @@ svg {
 .share__field {
   background-color: #fff;
   height: 4rem;
-  width: 20rem;
   margin: 0;
+  width: 20rem;
 }
 
 .share__field--btn {
+  align-items: center;
   background-color: #019bba;
-  height: 4rem;
-  width: 5rem;
-  margin-right: 5rem;
   color: #fff;
   display: flex;
+  height: 4rem;
   justify-content: center;
-  align-items: center;
+  margin-right: 5rem;
+  width: 5rem;
 }
 
 .share--icon{
   height: 1.5rem;
-  width: 1.5rem;
   margin: 0 .5rem .5rem 0;
   vertical-align: middle;
+  width: 1.5rem;
 }
 
 .share__article--p {
-  width: 80%;
   margin: 1rem;
+  width: 80%;
 }
 
 .--sans-button {
@@ -497,6 +496,15 @@ svg {
 
 
 @media screen and (min-width: 619px){
+
+  aside {
+    grid-column-end: 3;
+    grid-column-start: 1;
+  }
+
+  ul {
+    flex-direction: row;
+  }
 
   .top-search__search {
     visibility: hidden;
@@ -513,37 +521,32 @@ svg {
   }
 
   .charts__img--bar {
+    align-items: center;
     display: flex;
     justify-content: center;
-    align-items: center;
     margin: 3rem 0 1.5rem 0;
   }
 
-  aside {
-    grid-column-start: 1;
-    grid-column-end: 3;
-  }
-
-  ul {
-    flex-direction: row;
-  }
   .admin-nav__li {
-    font-size: 1.5rem;
     display: flex;
     flex-direction: row;
+    font-size: 1.5rem;
   }
+
   .tab-menu__li {
     font-size: 1rem;
   }
+
   .share__btn {
     width: 40%;
   }
 }
 @media screen and (min-width: 1083px){
+  
   body {
     display: grid;
-    grid-template-rows: 20% 20% 20% 20% 20%;
     grid-template-columns: 20% 80%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
   }
 
   ul {
@@ -551,41 +554,41 @@ svg {
   }
 
   aside {
-    grid-column-start: 1;
     grid-column-end: 1;
-    grid-row-start: 1;
+    grid-column-start: 1;
     grid-row-end: 5;
+    grid-row-start: 1;
   }
 
   .top-search {
-    grid-column-start: 2;
-    grid-column-end: 5;
     display: flex;
     flex-direction: row;
+    grid-column-end: 5;
+    grid-column-start: 2;
   }
 
   .top-search__btn {
-    height: 6.2rem;
-    width: 10%;
     background: none;
     cursor: pointer;
+    height: 6.2rem;
+    width: 10%;
   }
 
   .top-section__div{
-    height: 6rem;
-    width: 60%;
-    visibility: visible;
-    display: flex;
     align-items: center;
     color: lightgrey;
+    display: flex;
     font-size: 2rem;
+    height: 6rem;
     position: relative;
+    visibility: visible;
+    width: 60%;
   }
 
   .top-section__img {
     height: 3rem;
-    width: 3rem;
     margin: 1rem;
+    width: 3rem;
   }
 
   .top-search__search {
@@ -599,11 +602,11 @@ svg {
   }
 
   .location {
-    position: absolute;
-    left: 0;
-    top: 6rem;
     display: flex;
     justify-content: space-between;
+    left: 0;
+    position: absolute;
+    top: 6rem;
   }
 
   .tab-menu__li {
@@ -611,16 +614,16 @@ svg {
   }
 
   .--hover-blue {
+    cursor: pointer;
     float: right;
     margin-left: 3rem;
     margin-top: 3px;
-    cursor: pointer;
   }
 
   .top-search__btn-container {
+    align-items: center;
     display: flex;
     justify-content: center;
-    align-items: center;
     margin-bottom: 2rem;
   }
 
@@ -646,9 +649,9 @@ svg {
   }
 
   .charts__img--bar {
+    align-items: center;
     display: flex;
     justify-content: center;
-    align-items: center;
     margin: 6.2rem 0 1.5rem 0;
   }
 
@@ -668,16 +671,16 @@ svg {
     width: 60%;
   }
   .bottom-content {
-    width: 100%;
     display: flex;
     flex-direction: row;
+    width: 100%;
   }
 
   .svg-container {
+    align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
   }
 
   .bar-graph-container {
