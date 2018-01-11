@@ -12,6 +12,7 @@ aside {
   color: #cfd2d6;
   width: 100%;
 }
+
 h1,
 h2,
 h3,
@@ -32,6 +33,10 @@ hr {
   width: 1rem;
 }
 
+.aside__hr {
+  visibility: none;
+}
+
 .aside--icon {
   bottom: 1px;
   height: 2rem;
@@ -47,6 +52,7 @@ hr {
   flex-direction: column;
   justify-content: center;
   list-style: none;
+  display: none;
 }
 
 .main-nav__ul {
@@ -97,6 +103,7 @@ hr {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  display: none;
 }
 /* end admin user nav */
 
@@ -121,17 +128,13 @@ label {
   width: 100%;
 
 }
-.admin-nav {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
+
 .nav-categories {
   align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  display: none;
 }
 
 .nav-categories__container {
@@ -308,6 +311,7 @@ svg {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-top: 3rem;
 }
 
 .charts__img--bar {
@@ -326,12 +330,15 @@ svg {
 .charts__btn {
   background: #fff;
   border-radius: 15px;
-  border: .5px solid lightgrey;
-  color: lightgrey;
+  border: .5px solid #969191;
+  color: #969191;
   margin: 2rem 0 4rem 0;
   padding: 1rem;
 }
 
+.chart-text {
+  font-size: .5rem;
+}
 .ornament--div__hr {
   margin: 4rem;
 }
@@ -376,6 +383,10 @@ svg {
 
 .job-descript__h2 {
   padding-left: 1rem;
+}
+
+.job-descript__h2--last {
+  margin-bottom: 2rem;
 }
 
 .job-descript__p {
@@ -427,9 +438,9 @@ svg {
   background-color: royalblue;
   color: #fff;
   display: block;
-  height: 4rem;
+  height: 5rem;
   margin: 1rem;
-  width: 90%;
+  width: 70%;
 }
 
 .share__button--twitter {
@@ -441,8 +452,11 @@ svg {
 }
 
 .share__article {
-  margin-left: 10.2rem;
-  width: 69%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 86%;
+  margin: 1rem 0 1rem 8.6rem;
 }
 
 .share__article--h1 {
@@ -451,9 +465,10 @@ svg {
 
 .share__hr {
   border: 1px solid lightgrey;
-  margin: 2rem 0 2rem 11rem;
-  width: 60%;
+  margin: 2rem 0 2rem 9.5rem;
+  width: 68%;
 }
+
 .share__widget {
   display: flex;
   flex-direction: row;
@@ -461,10 +476,13 @@ svg {
 }
 
 .share__field {
+  align-items: center;
   background-color: #fff;
-  height: 4rem;
+  display: flex;
+  font-size: 1.5rem;
+  height: 6rem;
   margin: 0;
-  width: 20rem;
+  width: 31.5rem;
 }
 
 .share__field--btn {
@@ -472,10 +490,13 @@ svg {
   background-color: #019bba;
   color: #fff;
   display: flex;
-  height: 4rem;
+  height: 6rem;
   justify-content: center;
-  margin-right: 5rem;
-  width: 5rem;
+  margin-right: 8rem;
+  width: 8.5rem;
+}
+.share__field--p {
+  padding-left: 1rem;
 }
 
 .share--icon{
@@ -488,10 +509,11 @@ svg {
 .share__article--p {
   margin: 1rem;
   width: 80%;
+  font-size: 1.5rem;
 }
 
 .--sans-button {
-  width: 24rem;
+  width: 39.3rem;
 }
 
 
@@ -506,8 +528,16 @@ svg {
     flex-direction: row;
   }
 
+  .aside__hr {
+    visibility: visible;
+  }
+
   .top-search__search {
     visibility: hidden;
+  }
+
+  .svg-container {
+    margin: 6rem;
   }
 
   .charts {
@@ -525,6 +555,14 @@ svg {
     display: flex;
     justify-content: center;
     margin: 3rem 0 1.5rem 0;
+  }
+
+  .donut-btn {
+    margin: 9.4rem 0 0 0;
+  }
+
+  .bar-btn {
+    margin-right: 6rem;
   }
 
   .admin-nav__li {
@@ -558,6 +596,19 @@ svg {
     grid-column-start: 1;
     grid-row-end: 5;
     grid-row-start: 1;
+  }
+
+  .main-nav {
+    display: inline-block;
+  }
+
+  .admin-nav {
+    display: inline-block;
+  }
+
+  .nav-categories {
+    display: inline-block;
+    width: 100%;
   }
 
   .top-search {
@@ -631,7 +682,7 @@ svg {
   .top-title__btn {
     margin: 1rem;
   }
-  
+
   .tab-menu {
     display: flex;
     flex-direction: row;
@@ -678,11 +729,14 @@ svg {
     align-items: center;
     display: flex;
     justify-content: center;
-    margin: 6.2rem 0 1.5rem 0;
+    margin: 6.2rem 6rem 1.5rem 0;
+    width: 70%;
+    height: 80%;
   }
 
   .job-descript {
     width: 60%;
+    height: 45%;
   }
 
   .share {
@@ -694,7 +748,25 @@ svg {
   }
 
   .share__btn {
-    width: 60%;
+    width: 65%;
+  }
+
+  .share__article--p {
+    width: 73%;
+  }
+
+  .share__field {
+    display: flex;
+    align-items: center;
+    width: 26.5rem;
+  }
+
+  .share__field--p {
+    padding-left: 1.2rem;
+  }
+
+  .share__field--btn {
+    margin-right: 9.3rem;
   }
   .bottom-content {
     display: flex;
@@ -712,10 +784,6 @@ svg {
   .bar-graph-container {
     display: flex;
     flex-direction: column;
-  }
-
-  .job-descript__h2--last {
-    margin-bottom: 2rem;
   }
 
   .top-section__div {
